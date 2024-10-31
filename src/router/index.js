@@ -14,7 +14,7 @@ const routes = [{
         component: AboutPages,
     },
     {
-        path: '/heroes',
+        path: '/hero',
         name: 'Heroes',
         component: HeroesPage,
     },
