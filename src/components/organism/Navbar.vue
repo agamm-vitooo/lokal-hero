@@ -1,92 +1,171 @@
 <template>
-  <nav class="bg-blue-800 p-4 flex justify-between items-center sticky top-0 rounded-b-2xl">
-    <!-- Logo di Kiri -->
-    <div class="text-white text-lg font-bold">
-      <router-link to="/">Pahlawan Nasional</router-link>
-    </div>
+  <nav 
+    class="bg-gradient-to-r from-indigo-600 to-indigo-800 sticky top-0 z-50 border-b border-indigo-700/20"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo dan Brand -->
+        <div class="flex items-center">
+          <router-link 
+            to="/" 
+            class="flex items-center space-x-3"
+          >
+            <!-- Logo Icon -->
+            <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
+              <svg 
+                class="w-5 h-5 text-white" 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                stroke-width="2"
+              >
+                <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11m16-11v11"/>
+              </svg>
+            </div>
+            <!-- Brand Name -->
+            <span class="text-white font-bold text-lg">
+              Pahlawan Nasional
+            </span>
+          </router-link>
+        </div>
 
-    <!-- Tombol Hamburger untuk Menu Mobile -->
-    <button
-      class="md:hidden text-white focus:outline-none"
-      @click="toggleMenu"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="30"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h16m-7 6h7"
-        />
-      </svg>
-    </button>
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex md:items-center md:space-x-4">
+          <router-link 
+            v-for="item in navigationItems"
+            :key="item.name"
+            :to="item.path"
+            class="text-indigo-100 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 relative group"
+            :class="$route.path === item.path ? 'text-white' : ''"
+          >
+            {{ item.name }}
+            <!-- Active Indicator -->
+            <div 
+              class="absolute inset-x-0 -bottom-[1px] h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"
+              :class="$route.path === item.path ? 'scale-x-100' : ''"
+            ></div>
+          </router-link>
+        </div>
 
-    <!-- Kontainer Menu -->
-    <div :class="{'hidden': !isMenuOpen, 'flex': isMenuOpen}" class="md:flex flex-col md:flex-row w-full md:w-auto absolute md:static bg-blue-800 md:bg-transparent left-0 md:left-auto top-16">
-      <div class="relative flex-grow mb-4 md:mb-0">
-        <input
-          type="text"
-          v-model="searchQuery"
-          @input="onSearch"
-          placeholder="Cari pahlawan..."
-          class="bg-blue-700 text-white rounded-lg py-2 px-4 pl-10 focus:outline-none focus:ring focus:ring-indigo-500 w-full"
-        />
-        <svg
-          class="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400"
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M11 4a7 7 0 100 14 7 7 0 000-14zm0 0l6 6m-6-6l-6 6"
-          />
-        </svg>
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden">
+          <button
+            @click="toggleMenu"
+            class="inline-flex items-center justify-center p-2 rounded-md text-indigo-100 hover:text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-colors duration-200"
+          >
+            <span class="sr-only">Open main menu</span>
+            <!-- Hamburger Icon -->
+            <svg
+              :class="{'hidden': isMenuOpen, 'block': !isMenuOpen}"
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!-- Close Icon -->
+            <svg
+              :class="{'block': isMenuOpen, 'hidden': !isMenuOpen}"
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
-        <li>
-          <router-link to="/" class="block text-white hover:text-indigo-300 px-2 py-1 rounded">Beranda</router-link>
-        </li>
-        <li>
-          <router-link to="/about" class="block text-white hover:text-indigo-300 px-2 py-1 rounded">Tentang</router-link>
-        </li>
-      </ul>
     </div>
+
+    <!-- Mobile Menu -->
+    <transition
+      enter-active-class="transition duration-200 ease-out"
+      enter-from-class="transform -translate-y-4 opacity-0"
+      enter-to-class="transform translate-y-0 opacity-100"
+      leave-active-class="transition duration-150 ease-in"
+      leave-from-class="transform translate-y-0 opacity-100"
+      leave-to-class="transform -translate-y-4 opacity-0"
+    >
+      <div 
+        v-show="isMenuOpen" 
+        class="md:hidden bg-indigo-800"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <router-link
+            v-for="item in navigationItems"
+            :key="item.name"
+            :to="item.path"
+            class="block px-3 py-2 rounded-md text-base font-medium text-indigo-100 hover:text-white hover:bg-indigo-700 transition-colors duration-200"
+            :class="$route.path === item.path ? 'bg-indigo-700 text-white' : ''"
+            @click="isMenuOpen = false"
+          >
+            {{ item.name }}
+          </router-link>
+        </div>
+      </div>
+    </transition>
   </nav>
 </template>
 
 <script>
 export default {
+  name: 'Navbar',
   data() {
     return {
-      searchQuery: '',
-      isMenuOpen: false, // Untuk mengelola status menu
+      isMenuOpen: false,
+      navigationItems: [
+        { name: 'Beranda', path: '/' },
+        { name: 'Tentang', path: '/about' },
+        { name: 'Pahlawan', path: '/heroes' }
+      ]
     };
   },
   methods: {
-    onSearch() {
-      // Logika pencarian bisa ditambahkan di sini
-      console.log('Mencari:', this.searchQuery);
-    },
     toggleMenu() {
-      // Mengubah status menu
       this.isMenuOpen = !this.isMenuOpen;
-    },
+    }
   },
+  watch: {
+    '$route'() {
+      // Tutup menu mobile saat rute berubah
+      this.isMenuOpen = false;
+    }
+  },
+  mounted() {
+    // Handle click outside untuk menutup menu
+    document.addEventListener('click', (e) => {
+      const nav = document.querySelector('nav');
+      if (nav && !nav.contains(e.target)) {
+        this.isMenuOpen = false;
+      }
+    });
+  },
+  beforeUnmount() {
+    // Cleanup event listener
+    document.removeEventListener('click');
+  }
 };
 </script>
 
 <style scoped>
-/* Tambahan gaya jika diperlukan */
+/* Custom Scrollbar untuk Browser yang mendukung */
+@media (min-width: 768px) {
+  nav::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  nav::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  nav::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+  }
+}
 </style>
