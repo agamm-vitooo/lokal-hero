@@ -1,0 +1,90 @@
+Berikut adalah brief yang telah disesuaikan untuk aplikasi yang menampilkan data pahlawan nasional Indonesia menggunakan Vue.js, Tailwind CSS, dan Axios.
+
+---
+
+### Tujuan
+Membuat aplikasi frontend yang menampilkan data pahlawan nasional Indonesia dengan beberapa fitur pencarian menggunakan Vue.js sebagai framework utama, Tailwind CSS untuk desain, dan Axios untuk memanggil API.
+
+### Spesifikasi Fitur
+
+1. **Tampilan Utama**:
+   - Menampilkan daftar seluruh pahlawan nasional.
+   - Menyusun data dalam bentuk grid atau list yang responsif, sehingga tetap mudah dibaca pada perangkat apapun.
+
+2. **Fitur Pencarian**:
+   - Pencarian berdasarkan berbagai kriteria, termasuk nama, kata kunci, periode hidup, tahun lahir, tahun meninggal/gugur, dan tahun diangkat sebagai pahlawan nasional. Setiap fitur pencarian akan memanfaatkan endpoint yang tersedia dari `/api/heroes` dengan parameter yang disesuaikan.
+
+3. **Desain**:
+   - Menggunakan **Tailwind CSS** untuk mendukung tampilan yang minimalis dan responsif.
+   - Tampilan **card** atau **list** untuk setiap data pahlawan.
+   - Tombol dan form pencarian yang mudah diakses.
+
+4. **Koneksi API**:
+   - **Axios** digunakan untuk memanggil API `/api/heroes` dengan berbagai parameter filter yang disebutkan di atas.
+
+5. **Error Handling**:
+   - Menampilkan pesan error jika data tidak ditemukan atau jika ada kesalahan koneksi.
+
+6. **Testing**:
+   - Pengujian untuk memastikan bahwa filter bekerja sesuai harapan dan tampilan berjalan responsif.
+
+---
+
+### Daftar Endpoint `/api/heroes`
+
+Aplikasi ini akan menggunakan beberapa endpoint untuk mendukung fitur-fitur pencarian, dengan penjelasan sebagai berikut:
+
+1. **Menampilkan semua pahlawan nasional**
+   - **Endpoint**: `GET /api/heroes`
+   - **Parameter**: Tidak ada
+   - **Deskripsi**: Menampilkan seluruh data pahlawan nasional.
+
+2. **Pencarian berdasarkan nama**
+   - **Endpoint**: `GET /api/heroes?name=`
+   - **Parameter**: 
+     - `name`: *string* — nama pahlawan
+   - **Deskripsi**: Mencari pahlawan nasional berdasarkan nama.
+   - **Contoh**: `/api/heroes?name=nasution`
+
+3. **Pencarian berdasarkan nama, deskripsi, atau kata kunci umum**
+   - **Endpoint**: `GET /api/heroes?q=`
+   - **Parameter**:
+     - `q`: *string* — kata kunci pencarian
+   - **Deskripsi**: Mencari pahlawan nasional berdasarkan nama, deskripsi, atau kata kunci lainnya.
+   - **Contoh**: `/api/heroes?q=angkatan`
+
+4. **Pencarian berdasarkan periode hidup**
+   - **Endpoint**: `GET /api/heroes?alive_in_start=&alive_in_end=`
+   - **Parameter**:
+     - `alive_in_start`: *integer* — tahun awal hidup
+     - `alive_in_end`: *integer* — tahun akhir hidup
+   - **Deskripsi**: Mencari pahlawan yang hidup pada periode tertentu.
+   - **Contoh**: `/api/heroes?alive_in_start=1900&alive_in_end=1945`
+
+5. **Pencarian berdasarkan rentang tahun lahir**
+   - **Endpoint**: `GET /api/heroes?birth_year_start=&birth_year_end=`
+   - **Parameter**:
+     - `birth_year_start`: *integer* — tahun awal lahir
+     - `birth_year_end`: *integer* — tahun akhir lahir
+   - **Deskripsi**: Mencari pahlawan berdasarkan rentang tahun lahir.
+   - **Contoh**: `/api/heroes?birth_year_start=1900&birth_year_end=1945`
+
+6. **Pencarian berdasarkan rentang tahun meninggal/gugur**
+   - **Endpoint**: `GET /api/heroes?death_year_start=&death_year_end=`
+   - **Parameter**:
+     - `death_year_start`: *integer* — tahun awal meninggal/gugur
+     - `death_year_end`: *integer* — tahun akhir meninggal/gugur
+   - **Deskripsi**: Mencari pahlawan yang meninggal/gugur di rentang tahun tertentu.
+   - **Contoh**: `/api/heroes?death_year_start=1900&death_year_end=1945`
+
+7. **Pencarian berdasarkan rentang tahun diangkat sebagai pahlawan nasional**
+   - **Endpoint**: `GET /api/heroes?ascend_year_start=&ascend_year_end=`
+   - **Parameter**:
+     - `ascend_year_start`: *integer* — tahun awal diangkat
+     - `ascend_year_end`: *integer* — tahun akhir diangkat
+   - **Deskripsi**: Mencari pahlawan yang diangkat sebagai pahlawan nasional pada rentang tahun tertentu.
+   - **Contoh**: `/api/heroes?ascend_year_start=1980&ascend_year_end=2000`
+
+---
+
+Dengan daftar endpoint ini, setiap fungsi pencarian dapat diimplementasikan menggunakan Axios di aplikasi Vue.js yang akan dibangun.
