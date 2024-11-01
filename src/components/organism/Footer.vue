@@ -64,7 +64,7 @@
             </li>
             <li>
               <router-link 
-                to="/heroes" 
+                to="/" 
                 class="text-indigo-200 hover:text-white transition-colors duration-200 flex items-center"
               >
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,7 +75,7 @@
             </li>
             <li>
               <router-link 
-                to="/about" 
+                to="/" 
                 class="text-indigo-200 hover:text-white transition-colors duration-200 flex items-center"
               >
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,7 +86,7 @@
             </li>
             <li>
               <router-link 
-                to="/contact" 
+                to="/" 
                 class="text-indigo-200 hover:text-white transition-colors duration-200 flex items-center"
               >
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
