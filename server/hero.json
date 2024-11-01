@@ -1,0 +1,601 @@
+[{
+        "id": 1,
+        "name": "Sudirman",
+        "birthPlace": "Banyumas, Jawa Tengah",
+        "birthYear": 1916,
+        "deathYear": 1950,
+        "description": "Panglima Besar Tentara Nasional Indonesia dan pejuang kemerdekaan Indonesia."
+    },
+    {
+        "id": 2,
+        "name": "R.A. Kartini",
+        "birthPlace": "Jepara, Jawa Tengah",
+        "birthYear": 1879,
+        "deathYear": 1904,
+        "description": "Pelopor emansipasi wanita di Indonesia dan penulis buku terkenal, Habis Gelap Terbitlah Terang."
+    },
+    {
+        "id": 3,
+        "name": "Soekarno",
+        "birthPlace": "Blitar, Jawa Timur",
+        "birthYear": 1901,
+        "deathYear": 1970,
+        "description": "Presiden pertama Indonesia yang memproklamasikan kemerdekaan pada 17 Agustus 1945."
+    },
+    {
+        "id": 4,
+        "name": "Mohammad Hatta",
+        "birthPlace": "Bukittinggi, Sumatera Barat",
+        "birthYear": 1902,
+        "deathYear": 1980,
+        "description": "Wakil Presiden pertama Indonesia yang berperan besar dalam kemerdekaan dan diplomasi negara."
+    },
+    {
+        "id": 5,
+        "name": "Cut Nyak Dhien",
+        "birthPlace": "Lampadang, Aceh",
+        "birthYear": 1848,
+        "deathYear": 1908,
+        "description": "Pahlawan wanita Aceh yang gigih melawan penjajah Belanda."
+    },
+    {
+        "id": 6,
+        "name": "Diponegoro",
+        "birthPlace": "Yogyakarta",
+        "birthYear": 1785,
+        "deathYear": 1855,
+        "description": "Pemimpin Perang Jawa melawan Belanda dari tahun 1825 hingga 1830."
+    },
+    {
+        "id": 7,
+        "name": "Ki Hajar Dewantara",
+        "birthPlace": "Yogyakarta",
+        "birthYear": 1889,
+        "deathYear": 1959,
+        "description": "Tokoh pendidikan dan pendiri Taman Siswa yang dikenal dengan semboyan 'Ing Ngarsa Sung Tuladha'."
+    },
+    {
+        "id": 8,
+        "name": "Imam Bonjol",
+        "birthPlace": "Bonjol, Sumatera Barat",
+        "birthYear": 1772,
+        "deathYear": 1864,
+        "description": "Pemimpin Perang Padri yang melawan penjajahan Belanda di Sumatera Barat."
+    },
+    {
+        "id": 9,
+        "name": "Sutomo",
+        "birthPlace": "Surabaya, Jawa Timur",
+        "birthYear": 1920,
+        "deathYear": 1981,
+        "description": "Tokoh perjuangan 10 November di Surabaya melawan pasukan Sekutu."
+    },
+    {
+        "id": 10,
+        "name": "Tjoet Nja' Meutia",
+        "birthPlace": "Keureutoe, Aceh",
+        "birthYear": 1870,
+        "deathYear": 1910,
+        "description": "Pahlawan wanita dari Aceh yang gigih melawan kolonial Belanda."
+    },
+    {
+        "id": 11,
+        "name": "Sultan Hasanuddin",
+        "birthPlace": "Gowa, Sulawesi Selatan",
+        "birthYear": 1631,
+        "deathYear": 1670,
+        "description": "Pahlawan nasional dari Sulawesi Selatan yang melawan Belanda pada abad ke-17."
+    },
+    {
+        "id": 12,
+        "name": "Ahmad Yani",
+        "birthPlace": "Purworejo, Jawa Tengah",
+        "birthYear": 1922,
+        "deathYear": 1965,
+        "description": "Jenderal TNI yang gugur dalam peristiwa G30S/PKI."
+    },
+    {
+        "id": 13,
+        "name": "Pattimura",
+        "birthPlace": "Maluku",
+        "birthYear": 1783,
+        "deathYear": 1817,
+        "description": "Pahlawan dari Maluku yang memimpin perang melawan VOC pada tahun 1817."
+    },
+    {
+        "id": 14,
+        "name": "I Gusti Ngurah Rai",
+        "birthPlace": "Badung, Bali",
+        "birthYear": 1917,
+        "deathYear": 1946,
+        "description": "Pahlawan Bali yang memimpin pertempuran di Margarana melawan Belanda."
+    },
+    {
+        "id": 15,
+        "name": "Kartosoewirjo",
+        "birthPlace": "Cepu, Jawa Tengah",
+        "birthYear": 1905,
+        "deathYear": 1962,
+        "description": "Pendiri DI/TII yang berjuang untuk mendirikan Negara Islam Indonesia."
+    },
+    {
+        "id": 16,
+        "name": "Cut Meutia",
+        "birthPlace": "Pirak, Aceh",
+        "birthYear": 1870,
+        "deathYear": 1910,
+        "description": "Pejuang perempuan Aceh yang melawan penjajahan Belanda."
+    },
+    {
+        "id": 17,
+        "name": "Hamengkubuwono IX",
+        "birthPlace": "Yogyakarta",
+        "birthYear": 1912,
+        "deathYear": 1988,
+        "description": "Sultan Yogyakarta yang mendukung kemerdekaan Indonesia."
+    },
+    {
+        "id": 18,
+        "name": "Agus Salim",
+        "birthPlace": "Koto Gadang, Sumatera Barat",
+        "birthYear": 1884,
+        "deathYear": 1954,
+        "description": "Diplomat dan pahlawan yang turut memperjuangkan kemerdekaan Indonesia."
+    },
+    {
+        "id": 19,
+        "name": "Wolter Monginsidi",
+        "birthPlace": "Manado, Sulawesi Utara",
+        "birthYear": 1925,
+        "deathYear": 1949,
+        "description": "Pahlawan nasional yang berjuang di Sulawesi melawan Belanda."
+    },
+    {
+        "id": 20,
+        "name": "Tan Malaka",
+        "birthPlace": "Limapuluh Kota, Sumatera Barat",
+        "birthYear": 1897,
+        "deathYear": 1949,
+        "description": "Pemikir, pejuang kemerdekaan, dan tokoh revolusioner Indonesia."
+    },
+    {
+        "id": 21,
+        "name": "Dewi Sartika",
+        "birthPlace": "Cicalengka, Jawa Barat",
+        "birthYear": 1884,
+        "deathYear": 1947,
+        "description": "Pelopor pendidikan wanita di Jawa Barat."
+    },
+    {
+        "id": 22,
+        "name": "Teuku Umar",
+        "birthPlace": "Meulaboh, Aceh",
+        "birthYear": 1854,
+        "deathYear": 1899,
+        "description": "Pejuang Aceh yang melawan penjajahan Belanda di daerah Aceh."
+    },
+    {
+        "id": 23,
+        "name": "Sukarno",
+        "birthPlace": "Blitar, Jawa Timur",
+        "birthYear": 1901,
+        "deathYear": 1970,
+        "description": "Presiden pertama Republik Indonesia, orator dan pemimpin kemerdekaan."
+    },
+    {
+        "id": 24,
+        "name": "Gatot Subroto",
+        "birthPlace": "Purwokerto, Jawa Tengah",
+        "birthYear": 1907,
+        "deathYear": 1962,
+        "description": "Pahlawan militer dan tokoh penting dalam TNI."
+    },
+    {
+        "id": 25,
+        "name": "Hasanuddin",
+        "birthPlace": "Gowa, Sulawesi Selatan",
+        "birthYear": 1631,
+        "deathYear": 1670,
+        "description": "Pemimpin perang melawan VOC dari Sulawesi Selatan."
+    },
+    {
+        "id": 26,
+        "name": "Martha Christina Tiahahu",
+        "birthPlace": "Nusa Laut, Maluku",
+        "birthYear": 1800,
+        "deathYear": 1818,
+        "description": "Pejuang perempuan dari Maluku yang melawan penjajahan Belanda pada usia muda."
+    },
+    {
+        "id": 27,
+        "name": "Frans Kaisiepo",
+        "birthPlace": "Biak, Papua",
+        "birthYear": 1921,
+        "deathYear": 1979,
+        "description": "Pejuang kemerdekaan dari Papua yang berperan dalam integrasi Papua ke Indonesia."
+    },
+    {
+        "id": 28,
+        "name": "Sam Ratulangi",
+        "birthPlace": "Tondano, Sulawesi Utara",
+        "birthYear": 1890,
+        "deathYear": 1949,
+        "description": "Politikus, ilmuwan, dan tokoh perjuangan dari Sulawesi Utara."
+    },
+    {
+        "id": 29,
+        "name": "Raden Dewi Sartika",
+        "birthPlace": "Bandung, Jawa Barat",
+        "birthYear": 1884,
+        "deathYear": 1947,
+        "description": "Pendidik yang memperjuangkan pendidikan untuk kaum perempuan di Jawa Barat."
+    },
+    {
+        "id": 30,
+        "name": "Bung Tomo",
+        "birthPlace": "Surabaya, Jawa Timur",
+        "birthYear": 1920,
+        "deathYear": 1981,
+        "description": "Tokoh perjuangan dalam Pertempuran 10 November di Surabaya."
+    },
+    {
+        "id": 31,
+        "name": "H.O.S. Tjokroaminoto",
+        "birthPlace": "Ponorogo, Jawa Timur",
+        "birthYear": 1882,
+        "deathYear": 1934,
+        "description": "Guru para pemimpin nasional dan tokoh Sarekat Islam yang memperjuangkan hak-hak rakyat."
+    },
+    {
+        "id": 32,
+        "name": "Prince Diponegoro",
+        "birthPlace": "Yogyakarta",
+        "birthYear": 1785,
+        "deathYear": 1855,
+        "description": "Pemimpin Perang Diponegoro melawan Belanda dari tahun 1825-1830."
+    },
+    {
+        "id": 33,
+        "name": "Tjoet Nja’ Dhien",
+        "birthPlace": "Aceh",
+        "birthYear": 1848,
+        "deathYear": 1908,
+        "description": "Pahlawan wanita Aceh yang terkenal gigih melawan penjajahan Belanda."
+    },
+    {
+        "id": 34,
+        "name": "Ismail Marzuki",
+        "birthPlace": "Jakarta",
+        "birthYear": 1914,
+        "deathYear": 1958,
+        "description": "Komponis besar Indonesia yang menciptakan banyak lagu nasional."
+    },
+    {
+        "id": 35,
+        "name": "Sisingamangaraja XII",
+        "birthPlace": "Sumatera Utara",
+        "birthYear": 1845,
+        "deathYear": 1907,
+        "description": "Raja Batak yang memimpin perlawanan melawan penjajah Belanda."
+    },
+    {
+        "id": 36,
+        "name": "K.H. Hasyim Asy'ari",
+        "birthPlace": "Jombang, Jawa Timur",
+        "birthYear": 1871,
+        "deathYear": 1947,
+        "description": "Pendiri Nahdlatul Ulama dan tokoh ulama besar Indonesia."
+    },
+    {
+        "id": 37,
+        "name": "K.H. Ahmad Dahlan",
+        "birthPlace": "Yogyakarta",
+        "birthYear": 1868,
+        "deathYear": 1923,
+        "description": "Pendiri Muhammadiyah dan tokoh pendidikan di Indonesia."
+    },
+    {
+        "id": 38,
+        "name": "Tengku Fakinah",
+        "birthPlace": "Aceh",
+        "birthYear": 1838,
+        "deathYear": 1895,
+        "description": "Pahlawan perempuan dari Aceh yang berjuang melawan penjajah Belanda."
+    },
+    {
+        "id": 39,
+        "name": "Benny Moerdani",
+        "birthPlace": "Blora, Jawa Tengah",
+        "birthYear": 1932,
+        "deathYear": 2004,
+        "description": "Pahlawan militer dan tokoh intelijen di Indonesia."
+    },
+    {
+        "id": 40,
+        "name": "Pierre Tendean",
+        "birthPlace": "Jakarta",
+        "birthYear": 1939,
+        "deathYear": 1965,
+        "description": "Perwira muda TNI yang gugur dalam peristiwa G30S/PKI."
+    },
+    {
+        "id": 41,
+        "name": "Suharto",
+        "birthPlace": "Yogyakarta",
+        "birthYear": 1921,
+        "deathYear": 2008,
+        "description": "Presiden kedua Republik Indonesia yang memimpin selama 32 tahun."
+    },
+    {
+        "id": 42,
+        "name": "Soeprapto",
+        "birthPlace": "Purwokerto, Jawa Tengah",
+        "birthYear": 1920,
+        "deathYear": 1965,
+        "description": "Jenderal TNI yang gugur dalam peristiwa G30S/PKI."
+    },
+    {
+        "id": 43,
+        "name": "Mas Tirtodarmo Haryono",
+        "birthPlace": "Surabaya, Jawa Timur",
+        "birthYear": 1924,
+        "deathYear": 1965,
+        "description": "Brigadir Jenderal TNI yang gugur dalam peristiwa G30S/PKI."
+    },
+    {
+        "id": 44,
+        "name": "Siswondo Parman",
+        "birthPlace": "Wonosobo, Jawa Tengah",
+        "birthYear": 1918,
+        "deathYear": 1965,
+        "description": "Mayor Jenderal TNI yang gugur dalam peristiwa G30S/PKI."
+    },
+    {
+        "id": 45,
+        "name": "Supriyadi",
+        "birthPlace": "Blitar, Jawa Timur",
+        "birthYear": 1923,
+        "deathYear": 1945,
+        "description": "Tokoh pemberontakan PETA melawan penjajah Jepang di Blitar."
+    },
+    {
+        "id": 46,
+        "name": "Syafruddin Prawiranegara",
+        "birthPlace": "Banten",
+        "birthYear": 1911,
+        "deathYear": 1989,
+        "description": "Pahlawan yang pernah menjabat sebagai Ketua PDRI saat Soekarno dan Hatta ditawan."
+    },
+    {
+        "id": 47,
+        "name": "Kapitan Pattimura",
+        "birthPlace": "Maluku",
+        "birthYear": 1783,
+        "deathYear": 1817,
+        "description": "Pahlawan dari Maluku yang memimpin perlawanan terhadap Belanda."
+    },
+    {
+        "id": 48,
+        "name": "Ki Ageng Suryomentaram",
+        "birthPlace": "Yogyakarta",
+        "birthYear": 1892,
+        "deathYear": 1962,
+        "description": "Tokoh kebudayaan dan filsuf dari Yogyakarta."
+    },
+    {
+        "id": 49,
+        "name": "Abdul Haris Nasution",
+        "birthPlace": "Hutapungkut, Sumatera Utara",
+        "birthYear": 1918,
+        "deathYear": 2000,
+        "description": "Jenderal besar dan ahli strategi militer Indonesia."
+    },
+    {
+        "id": 50,
+        "name": "Prof. Lafran Pane",
+        "birthPlace": "Padang Sidempuan, Sumatera Utara",
+        "birthYear": 1922,
+        "deathYear": 1991,
+        "description": "Pendiri Himpunan Mahasiswa Islam (HMI) dan tokoh pendidikan di Indonesia."
+    },
+    {
+        "id": 51,
+        "name": "Emmy Saelan",
+        "birthPlace": "Makassar, Sulawesi Selatan",
+        "birthYear": 1924,
+        "deathYear": 1949,
+        "description": "Pejuang perempuan dari Sulawesi Selatan yang gugur dalam perang melawan Belanda."
+    },
+    {
+        "id": 52,
+        "name": "Dr. Tjipto Mangoenkoesoemo",
+        "birthPlace": "Ambarawa, Jawa Tengah",
+        "birthYear": 1883,
+        "deathYear": 1943,
+        "description": "Dokter dan pemimpin politik yang berjuang melawan kolonialisme Belanda."
+    },
+    {
+        "id": 53,
+        "name": "Maria Walanda Maramis",
+        "birthPlace": "Minahasa, Sulawesi Utara",
+        "birthYear": 1872,
+        "deathYear": 1924,
+        "description": "Pionir pendidikan perempuan di Minahasa dan tokoh emansipasi perempuan."
+    },
+    {
+        "id": 54,
+        "name": "Daan Mogot",
+        "birthPlace": "Manado, Sulawesi Utara",
+        "birthYear": 1921,
+        "deathYear": 1946,
+        "description": "Pejuang muda yang gugur dalam pertempuran melawan Jepang di Tangerang."
+    },
+    {
+        "id": 55,
+        "name": "Sultan Ageng Tirtayasa",
+        "birthPlace": "Banten",
+        "birthYear": 1631,
+        "deathYear": 1692,
+        "description": "Sultan Banten yang melawan VOC Belanda pada abad ke-17."
+    },
+    {
+        "id": 56,
+        "name": "Johannes Leimena",
+        "birthPlace": "Ambon, Maluku",
+        "birthYear": 1905,
+        "deathYear": 1977,
+        "description": "Dokter dan tokoh politik yang aktif dalam kemerdekaan dan pembangunan Indonesia."
+    },
+    {
+        "id": 57,
+        "name": "Slamet Riyadi",
+        "birthPlace": "Surakarta, Jawa Tengah",
+        "birthYear": 1927,
+        "deathYear": 1950,
+        "description": "Pejuang kemerdekaan yang memimpin berbagai operasi militer di Jawa Tengah."
+    },
+    {
+        "id": 58,
+        "name": "Tuanku Imam Bonjol",
+        "birthPlace": "Bonjol, Sumatera Barat",
+        "birthYear": 1772,
+        "deathYear": 1864,
+        "description": "Pemimpin Perang Padri yang melawan Belanda di Sumatera Barat."
+    },
+    {
+        "id": 59,
+        "name": "Basuki Rahmat",
+        "birthPlace": "Tuban, Jawa Timur",
+        "birthYear": 1921,
+        "deathYear": 1969,
+        "description": "Jenderal TNI yang ikut menandatangani Supersemar."
+    },
+    {
+        "id": 60,
+        "name": "Jenderal Soedirman",
+        "birthPlace": "Purbalingga, Jawa Tengah",
+        "birthYear": 1916,
+        "deathYear": 1950,
+        "description": "Panglima besar pertama TNI dan pejuang kemerdekaan Indonesia."
+    },
+    {
+        "id": 61,
+        "name": "Achmad Soebardjo",
+        "birthPlace": "Karawang, Jawa Barat",
+        "birthYear": 1896,
+        "deathYear": 1978,
+        "description": "Diplomat dan tokoh perjuangan yang terlibat dalam perumusan Proklamasi."
+    },
+    {
+        "id": 62,
+        "name": "Husni Thamrin",
+        "birthPlace": "Jakarta",
+        "birthYear": 1894,
+        "deathYear": 1941,
+        "description": "Politisi dan pahlawan nasional yang memperjuangkan hak-hak warga pribumi di era kolonial."
+    },
+    {
+        "id": 63,
+        "name": "K.H. Idham Chalid",
+        "birthPlace": "Satui, Kalimantan Selatan",
+        "birthYear": 1921,
+        "deathYear": 2010,
+        "description": "Ulama dan politisi yang menjabat Ketua Umum PBNU dan Wakil Perdana Menteri Indonesia."
+    },
+    {
+        "id": 64,
+        "name": "Siti Hartinah Soeharto",
+        "birthPlace": "Surakarta, Jawa Tengah",
+        "birthYear": 1923,
+        "deathYear": 1996,
+        "description": "Ibu negara dan tokoh pendiri Yayasan Dharmais serta tokoh nasional."
+    },
+    {
+        "id": 65,
+        "name": "Nani Wartabone",
+        "birthPlace": "Gorontalo",
+        "birthYear": 1907,
+        "deathYear": 1986,
+        "description": "Pahlawan dari Gorontalo yang memproklamasikan kemerdekaan sebelum 1945."
+    },
+    {
+        "id": 66,
+        "name": "Kasman Singodimedjo",
+        "birthPlace": "Purworejo, Jawa Tengah",
+        "birthYear": 1904,
+        "deathYear": 1982,
+        "description": "Pahlawan kemerdekaan dan tokoh dalam pembentukan Pancasila."
+    },
+    {
+        "id": 67,
+        "name": "Andi Mappanyukki",
+        "birthPlace": "Bone, Sulawesi Selatan",
+        "birthYear": 1885,
+        "deathYear": 1967,
+        "description": "Raja Bone yang mendukung kemerdekaan Indonesia dan tokoh dari Sulawesi Selatan."
+    },
+    {
+        "id": 68,
+        "name": "Bagindo Azizchan",
+        "birthPlace": "Padang, Sumatera Barat",
+        "birthYear": 1910,
+        "deathYear": 1947,
+        "description": "Walikota Padang yang tewas dalam pertempuran melawan Belanda."
+    },
+    {
+        "id": 69,
+        "name": "Ibrahim Datuk Tan Malaka",
+        "birthPlace": "Limapuluh Kota, Sumatera Barat",
+        "birthYear": 1897,
+        "deathYear": 1949,
+        "description": "Tokoh revolusioner dan ideolog Marxis Indonesia."
+    },
+    {
+        "id": 70,
+        "name": "Prof. Dr. Sardjito",
+        "birthPlace": "Magelang, Jawa Tengah",
+        "birthYear": 1889,
+        "deathYear": 1970,
+        "description": "Dokter dan akademisi yang turut berperan dalam pendirian UGM."
+    },
+    {
+        "id": 71,
+        "name": "Siti Walidah",
+        "birthPlace": "Yogyakarta",
+        "birthYear": 1872,
+        "deathYear": 1946,
+        "description": "Istri Ahmad Dahlan dan tokoh emansipasi perempuan di Muhammadiyah."
+    },
+    {
+        "id": 72,
+        "name": "Soepomo",
+        "birthPlace": "Sukoharjo, Jawa Tengah",
+        "birthYear": 1903,
+        "deathYear": 1958,
+        "description": "Tokoh yang berperan dalam perumusan konstitusi Indonesia."
+    },
+    {
+        "id": 73,
+        "name": "Johanis Abraham Dimara",
+        "birthPlace": "Papua",
+        "birthYear": 1916,
+        "deathYear": 2000,
+        "description": "Pejuang Papua yang berjuang untuk kemerdekaan Irian Barat."
+    },
+    {
+        "id": 74,
+        "name": "Siti Manggopoh",
+        "birthPlace": "Agam, Sumatera Barat",
+        "birthYear": 1880,
+        "deathYear": 1928,
+        "description": "Pahlawan perempuan yang berjuang dalam Perang Manggopoh melawan Belanda."
+    },
+    {
+        "id": 75,
+        "name": "Cut Meutia",
+        "birthPlace": "Aceh Utara, Aceh",
+        "birthYear": 1870,
+        "deathYear": 1910,
+        "description": "Pahlawan nasional dari Aceh yang melawan Belanda dengan gigih."
+    }
+]

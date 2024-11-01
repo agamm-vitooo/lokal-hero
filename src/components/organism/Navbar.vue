@@ -120,8 +120,7 @@ export default {
       isMenuOpen: false,
       navigationItems: [
         { name: 'Beranda', path: '/' },
-        { name: 'Tentang', path: '/about' },
-        { name: 'Pahlawan', path: '/heroes' }
+        { name: 'Tentang', path: '/about' }
       ]
     };
   },

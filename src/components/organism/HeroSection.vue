@@ -37,7 +37,7 @@
             <!-- Interactive CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <router-link 
-                to="/heroes" 
+                to="/" 
                 class="group relative inline-flex items-center justify-center px-8 py-4 rounded-xl bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/25"
               >
                 <span class="absolute inset-0 bg-white/20 group-hover:scale-105 transition-transform duration-300"></span>
@@ -57,7 +57,7 @@
               </router-link>
               
               <router-link 
-                to="/history" 
+                to="/" 
                 class="group relative inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold overflow-hidden transition-all duration-300 hover:bg-white/20 hover:scale-105"
               >
                 <span class="relative flex items-center">
