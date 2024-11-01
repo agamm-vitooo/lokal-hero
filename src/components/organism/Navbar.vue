@@ -1,6 +1,11 @@
 <template>
   <nav 
-    class="bg-gradient-to-r from-indigo-600 to-indigo-800 sticky top-0 z-50 border-b border-indigo-700/20"
+    :class="[
+      'fixed w-full top-0 z-50 transition-all duration-300',
+      scrolled ? 
+        'bg-white/90 backdrop-blur-sm shadow-lg' : 
+        'bg-gradient-to-r from-indigo-600 to-indigo-800'
+    ]"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
@@ -11,9 +16,17 @@
             class="flex items-center space-x-3"
           >
             <!-- Logo Icon -->
-            <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
+            <div 
+              :class="[
+                'w-8 h-8 rounded-lg flex items-center justify-center transition-colors duration-300',
+                scrolled ? 'bg-indigo-100' : 'bg-white/10'
+              ]"
+            >
               <svg 
-                class="w-5 h-5 text-white" 
+                :class="[
+                  'w-5 h-5 transition-colors duration-300',
+                  scrolled ? 'text-indigo-600' : 'text-white'
+                ]"
                 xmlns="http://www.w3.org/2000/svg" 
                 viewBox="0 0 24 24" 
                 fill="none" 
@@ -24,7 +37,12 @@
               </svg>
             </div>
             <!-- Brand Name -->
-            <span class="text-white font-bold text-lg">
+            <span 
+              :class="[
+                'font-bold text-lg transition-colors duration-300',
+                scrolled ? 'text-indigo-600' : 'text-white'
+              ]"
+            >
               Pahlawan Nasional
             </span>
           </router-link>
@@ -36,14 +54,21 @@
             v-for="item in navigationItems"
             :key="item.name"
             :to="item.path"
-            class="text-indigo-100 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 relative group"
-            :class="$route.path === item.path ? 'text-white' : ''"
+            :class="[
+              'px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 relative group',
+              scrolled ? 
+                'text-gray-600 hover:text-indigo-600' : 
+                'text-indigo-100 hover:text-white'
+            ]"
           >
             {{ item.name }}
             <!-- Active Indicator -->
             <div 
-              class="absolute inset-x-0 -bottom-[1px] h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"
-              :class="$route.path === item.path ? 'scale-x-100' : ''"
+              :class="[
+                'absolute inset-x-0 -bottom-[1px] h-0.5 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200',
+                scrolled ? 'bg-indigo-600' : 'bg-white',
+                $route.path === item.path ? 'scale-x-100' : ''
+              ]"
             ></div>
           </router-link>
         </div>
@@ -52,7 +77,12 @@
         <div class="flex items-center md:hidden">
           <button
             @click="toggleMenu"
-            class="inline-flex items-center justify-center p-2 rounded-md text-indigo-100 hover:text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-colors duration-200"
+            :class="[
+              'inline-flex items-center justify-center p-2 rounded-md transition-colors duration-200',
+              scrolled ? 
+                'text-gray-600 hover:text-indigo-600 hover:bg-indigo-50' : 
+                'text-indigo-100 hover:text-white hover:bg-indigo-700'
+            ]"
           >
             <span class="sr-only">Open main menu</span>
             <!-- Hamburger Icon -->
@@ -93,15 +123,25 @@
     >
       <div 
         v-show="isMenuOpen" 
-        class="md:hidden bg-indigo-800"
+        :class="[
+          'md:hidden',
+          scrolled ? 'bg-white/90 backdrop-blur-sm' : 'bg-indigo-800'
+        ]"
       >
         <div class="px-2 pt-2 pb-3 space-y-1">
           <router-link
             v-for="item in navigationItems"
             :key="item.name"
             :to="item.path"
-            class="block px-3 py-2 rounded-md text-base font-medium text-indigo-100 hover:text-white hover:bg-indigo-700 transition-colors duration-200"
-            :class="$route.path === item.path ? 'bg-indigo-700 text-white' : ''"
+            :class="[
+              'block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200',
+              scrolled ?
+                'text-gray-600 hover:text-indigo-600 hover:bg-indigo-50' :
+                'text-indigo-100 hover:text-white hover:bg-indigo-700',
+              $route.path === item.path ? 
+                (scrolled ? 'bg-indigo-50 text-indigo-600' : 'bg-indigo-700 text-white') : 
+                ''
+            ]"
             @click="isMenuOpen = false"
           >
             {{ item.name }}
@@ -118,6 +158,7 @@ export default {
   data() {
     return {
       isMenuOpen: false,
+      scrolled: false,
       navigationItems: [
         { name: 'Beranda', path: '/' },
         { name: 'Tentang', path: '/about' }
@@ -127,16 +168,18 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+    },
+    handleScroll() {
+      this.scrolled = window.scrollY > 20;
     }
   },
   watch: {
     '$route'() {
-      // Tutup menu mobile saat rute berubah
       this.isMenuOpen = false;
     }
   },
   mounted() {
-    // Handle click outside untuk menutup menu
+    window.addEventListener('scroll', this.handleScroll);
     document.addEventListener('click', (e) => {
       const nav = document.querySelector('nav');
       if (nav && !nav.contains(e.target)) {
@@ -145,14 +188,14 @@ export default {
     });
   },
   beforeUnmount() {
-    // Cleanup event listener
+    window.removeEventListener('scroll', this.handleScroll);
     document.removeEventListener('click');
   }
 };
 </script>
 
 <style scoped>
-/* Custom Scrollbar untuk Browser yang mendukung */
+/* Custom Scrollbar */
 @media (min-width: 768px) {
   nav::-webkit-scrollbar {
     width: 4px;
@@ -166,5 +209,10 @@ export default {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 2px;
   }
+}
+
+/* Optional: Add smooth scroll to the page */
+html {
+  scroll-behavior: smooth;
 }
 </style>

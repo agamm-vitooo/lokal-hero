@@ -86,7 +86,7 @@
           <h2 class="text-2xl font-bold mb-4">Mulai Jelajahi Sekarang</h2>
           <p class="mb-6 text-indigo-100">Temukan kisah inspiratif para pahlawan nasional Indonesia</p>
           <router-link 
-            to="/heroes"
+            to="/"
             class="inline-flex items-center px-6 py-3 rounded-lg bg-white text-indigo-600 font-semibold hover:bg-indigo-50 transition-colors duration-200"
           >
             Telusuri Pahlawan
